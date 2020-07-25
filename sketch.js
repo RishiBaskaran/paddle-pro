@@ -1,6 +1,7 @@
 var ball,img,paddle;
 function preload() {
   /* preload your images here of the ball and the paddle */
+  img = loadImage("ball.png");
 }
 function setup() {
   createCanvas(400, 400);
@@ -9,7 +10,7 @@ function setup() {
   
   /* give the ball an initial velocity of 9 in the X direction */
   
-
+ball = createSprite(200,200,10,10);
 }
 
 function draw() {
